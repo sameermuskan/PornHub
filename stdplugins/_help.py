@@ -14,11 +14,11 @@ async def _(event):
         s_help_string = borg._plugins[splugin_name].__doc__
     else:
         s_help_string = "****:"
-    help_string = """@UniBorg ( **Custom Built By** @r4v4n4 ) \n**Verified Account**: ✅\n**Official Website**: https://ravanaisdrunk.site.live\n
+    help_string = """@BotDevlopers ( **Custom Built By** @BrayDen_1 ) \n**Verified Account**: ✅\n**Official Website**: https://ravanaisdrunk.site.live\n
 Pithun {}
 Talethrun {}
  
-**Custom Built Fork**: https://github.com/ravana69/PornHub""".format(
+**Custom Built Fork**: https://github.com/SameerMuskan/BrayDenBoT""".format(
         sys.version,
         __version__
     )
@@ -54,7 +54,7 @@ async def _(event):
     result = await borg(functions.help.GetConfigRequest())  # pylint:disable=E0602
     result = result.stringify()
     logger.info(result)  # pylint:disable=E0602
-    await event.edit("""Telethon UserBot powered by @UniBorg""")
+    await event.edit("""Telethon UserBot powered by @BotDevlopers""")
 
 
 @borg.on(admin_cmd(pattern="gandu (.*)"))
